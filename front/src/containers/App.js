@@ -25,6 +25,9 @@ class App extends Component {
     if (this.state.sideDrawerOpen) {
       backdrop = <Backdrop backdropClicked={this.backdropClickHandler} />
     }
+
+
+    
     return (
       <Fragment>
         <div className="app_container">
