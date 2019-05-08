@@ -24,6 +24,7 @@ export const fetchProducts = () =>{
     return dispatch =>{
         dispatch(fetchProductsStart())
         axios.get(API_BOOKS_URL).then(response =>{
+            console.log(response)
             dispatch(fetchProductsSuccess(response.data.data))
         }).catch(error =>{
             dispatch(fetchProductsFail(error))
