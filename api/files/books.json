@@ -5,7 +5,7 @@
     "author": "M. Karpiński, M. Dobrowolska, M. Braun, J. Lech",
     "cover_url": "/static/cover/book/457.jpg",
     "pages": 280,
-    "price": 3200,
+    "price": 32.00,
     "currency": "PLN"
   },
   {
@@ -14,7 +14,7 @@
     "author": "M. Karpiński, M. Dobrowolska, M. Braun, J. Lech",
     "cover_url": "/static/cover/book/458.jpg",
     "pages": 300,
-    "price": 3300,
+    "price": 33.00,
     "currency": "PLN"
   },
   {
@@ -23,7 +23,7 @@
     "author": "M. Dobrowolska, M. Jucewicz, M. Karpiński, P. Zarzycki",
     "cover_url": "/static/cover/book/905.jpg",
     "pages": 256,
-    "price": 2990,
+    "price": 29.90,
     "currency": "PLN"
   },
   {
@@ -32,7 +32,7 @@
     "author": "A. Łuczak, A. Murdzek",
     "cover_url": "/static/cover/book/1227.jpg",
     "pages": 344,
-    "price": 3230,
+    "price": 32.30,
     "currency": "PLN"
   },
   {
@@ -41,7 +41,7 @@
     "author": "M. Dobrowolska, M. Jucewicz, M. Karpiński, P. Zarzycki",
     "cover_url": "/static/cover/book/1228.jpg",
     "pages": 268,
-    "price": 3190,
+    "price": 31.90,
     "currency": "PLN"
   },
   {
@@ -50,7 +50,7 @@
     "author": "praca zbiorowa pod redakcją M. Dobrowolskiej",
     "cover_url": "/static/cover/book/1246.jpg",
     "pages": 336,
-    "price": 3420,
+    "price": 34.20,
     "currency": "PLN"
   },
   {
@@ -59,7 +59,7 @@
     "author": "M. Dobrowolska, M. Jucewicz, M. Karpiński, P. Zarzycki",
     "cover_url": "/static/cover/book/1250.jpg",
     "pages": 256,
-    "price": 3190,
+    "price": 31.90,
     "currency": "PLN"
   },
   {
@@ -68,7 +68,7 @@
     "author": "A. Łuczak, A. Murdzek, K. Krzemieniewska-Kleban",
     "cover_url": "/static/cover/book/1269.jpg",
     "pages": 352,
-    "price": 3230,
+    "price": 32.30,
     "currency": "PLN"
   },
   {
@@ -77,7 +77,7 @@
     "author": "A. Łuczak, E. Prylińska, A. Suchowierska, R. Maszka",
     "cover_url": "/static/cover/book/1270.jpg",
     "pages": 376,
-    "price": 3430,
+    "price": 34.30,
     "currency": "PLN"
   },
   {
@@ -86,7 +86,7 @@
     "cover_url": "/static/cover/book/1271.jpg",
     "author": "T. Małkowski",
     "pages": 160,
-    "price": 3050,
+    "price": 30.50,
     "currency": "PLN"
   },
   {
@@ -95,7 +95,7 @@
     "cover_url": "/static/cover/book/1272.jpg",
     "author": "T. Małkowski",
     "pages": 256,
-    "price": 3410,
+    "price": 34.10,
     "currency": "PLN"
   },
   {
@@ -104,7 +104,7 @@
     "author": "M. Dobrowolska, M. Jucewicz, M. Karpiński, P. Zarzycki",
     "cover_url": "/static/cover/book/1365.jpg",
     "pages": 272,
-    "price": 3190,
+    "price": 31.90,
     "currency": "PLN"
   },
   {
@@ -113,7 +113,7 @@
     "author": "praca zbiorowa pod redakcją M. Dobrowolskiej",
     "cover_url": "/static/cover/book/1374.jpg",
     "pages": 288,
-    "price": 3420,
+    "price": 34.20,
     "currency": "PLN"
   },
   {
@@ -122,7 +122,7 @@
     "author": "A. Łuczak, A. Murdzek",
     "cover_url": "/static/cover/book/1403.jpg",
     "pages": 390,
-    "price": 3230,
+    "price": 32.30,
     "currency": "PLN"
   },
   {
@@ -131,7 +131,7 @@
     "author": "A. Łuczak, E. Prylińska, K. Krzemieniewska-Kleban, A. Suchowierska",
     "cover_url": "/static/cover/book/1409.jpg",
     "pages": 387,
-    "price": 3430,
+    "price": 34.30,
     "currency": "PLN"
   },
   {
@@ -140,7 +140,7 @@
     "cover_url": "/static/cover/book/1415.jpg",
     "author": "T. Małkowski",
     "pages": 224,
-    "price": 3050,
+    "price": 30.50,
     "currency": "PLN"
   },
   {
@@ -149,7 +149,7 @@
     "cover_url": "/static/cover/book/1417.jpg",
     "author": "T. Małkowski",
     "pages": 264,
-    "price": 3410,
+    "price": 34.10,
     "currency": "PLN"
   }
 ]

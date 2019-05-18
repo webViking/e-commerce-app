@@ -20,9 +20,9 @@ router.get('/', (req, res, next) => {
   const page = +req.query.page || 1;
   const limit = 10;
   const filteredBooks = books.filter(getPredicate(req.query.search || {}));
-  const result = filteredBooks.slice((page - 1) * limit, page * limit)
-    .map(book => getBookWithCoverUrl(req, book));
-
+  //const result = filteredBooks.slice((page - 1) * limit, page * limit)
+   // .map(book => getBookWithCoverUrl(req, book));
+  const result = filteredBooks.map(book =>getBookWithCoverUrl(req, book))
   return res.status(200).json({
     data: result,
     metadata: {
