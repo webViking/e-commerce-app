@@ -19,16 +19,14 @@ export class ProductList extends Component {
   }
   onPageChanged = (data) =>{
     const { currentPage, totalPages, pageLimit } = data;
-    console.log(data)
     const offset = (currentPage - 1) * pageLimit;
     const currentProducts = this.props.productsList.slice(offset, offset + pageLimit);
 
     this.setState({ currentPage, currentProducts, totalPages });
-    //console.log(data)
+    
   }
   render() {
     const totalProducts = this.props.productsList.length
-   // const { page, records_per_page, total_records } = this.props
 
     const filtredBooks = this.state.currentProducts.filter(book => {
       return book.title.toLowerCase().indexOf(this.state.searchString.toLowerCase()) !== -1 || book.author.toLowerCase().indexOf(this.state.searchString.toLowerCase()) !== -1
@@ -49,15 +47,16 @@ export class ProductList extends Component {
           </div>
           <div>
           <div className="d-flex justify-content-center ">
+
           {this.props.page && this.props.page ? <Pagination pageNeighbours={1} totalRecords ={totalProducts} pageLimit ={6} onPageChanged={this.onPageChanged} /> :null}
+
           </div>
            
           </div>
           <div className="row">
             {
               filtredBooks.map((items) => {
-             
-                  
+      
                   return <Product item={items} key={items.id} />
                 
               })

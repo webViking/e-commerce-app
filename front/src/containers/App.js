@@ -1,10 +1,12 @@
 import React, { Component, Fragment } from 'react';
-import { Switch, Route } from 'react-router-dom'
 import 'bootstrap/dist/css/bootstrap.min.css'
+import { Switch, Route } from 'react-router-dom'
 import Toolbar from '../components/UI/Toolbar/Toolbar'
 import SideDrawer from '../components/UI/SideDrawer/SideDrawer'
 import Backdrop from '../components/UI/Backdrop/Backdrop'
 import ProductList from '../components/ProductList/ProductList'
+import Cart from '../components/Cart/Cart'
+import PageNotFound from '../components/UI/PageNotFound/PageNotFound'
 
 class App extends Component {
   state = {
@@ -35,7 +37,9 @@ class App extends Component {
             <SideDrawer show={this.state.sideDrawerOpen} />
           {backdrop}
         <Switch>
-          <Route to ="/" exact component = {ProductList}/>
+          <Route path ="/" exact component = {ProductList}/>
+          <Route path ="/cart"  component = {Cart}/>
+          <Route component = {PageNotFound}/>
         </Switch>
         </div>
       </Fragment>

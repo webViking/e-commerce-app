@@ -2,9 +2,10 @@ import * as actionTypes from '../actions/actionTypes'
 
 const initialState = {
     products: [],
-    cart: [],
     loading: false,
     error: null,
+    cart: [],
+
 
     page:null,
     records_per_page:null,
