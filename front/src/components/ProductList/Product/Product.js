@@ -1,5 +1,6 @@
 import React from 'react'
-
+import {connect} from 'react-redux'
+import *  as actions from '../../../redux/storage/actions/index'
 const Product = (props) => {
     const { author, cover_url, currency, pages, price, title } = props.item
     return (
@@ -14,7 +15,7 @@ const Product = (props) => {
                         <h6 className="card-subtitle mb-2 text-muted">Autor/Autorzy: {author}</h6>
                         <p className ="card-text">Liczba stron: {pages}</p>
                         <p className ="card-text">Cena: {price} {" "} {currency} </p>
-                        <button className= "btn btn-warning  text-white mr-2 mt-2">Dodaj do kosza</button>
+                        <button className= "btn btn-warning  text-white mr-2 mt-2" onClick ={props.onAddedToCart.bind(this,props.item)}>Dodaj do kosza</button>
                         <button className= "btn btn-primary mt-2">Zamów</button>
                     </div>
                 </div>
@@ -22,4 +23,9 @@ const Product = (props) => {
         </div>
     )
 }
-export default Product
+const mapDispatchToProps = dispatch =>{
+    return{
+        onAddedToCart: (addedParticularBook) => dispatch(actions.addToCartSuccess(addedParticularBook))
+    }
+}
+export default connect(null, mapDispatchToProps)(Product)

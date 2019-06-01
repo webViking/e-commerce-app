@@ -1,17 +1,19 @@
 import React, { Component } from 'react'
+
+import {connect} from 'react-redux'
 import CartColumns from './CartColumns/CartColumns'
 import CartList from './CartList/CartList'
 import CartEmpty from './CartEmpty/CartEmpty'
-import CartConclusion from './CartColumns/CartColumns'
+
 export class Cart extends Component {
   render() {
+    console.log(this.props.cartList)
     let checkWhetherCartIsEmpty = null
-    if(1>0){
+    if(this.props.cartList.length > 0 ){
       checkWhetherCartIsEmpty = (
         <React.Fragment>
-            <CartColumns />
-            <CartList/>
-            <CartConclusion/>
+            <CartColumns/>
+            <CartList products = {this.props.cartList}/>
         </React.Fragment>
       )
     }else{
@@ -22,12 +24,18 @@ export class Cart extends Component {
       )
     }
     return (
-      <div className = "py-5 mt-5">
-        <h1>Cart!</h1>
+      <div className = "container-fluid mt-5 text-center d-none d-lg-block pt-5 px-auto">
         {checkWhetherCartIsEmpty}
+    
       </div>
     )
   }
 }
 
-export default Cart
+const mapStateToProps = (state)=>{
+  return {
+    cartList: state.products.cart,
+  }
+}
+
+export default connect(mapStateToProps) (Cart)

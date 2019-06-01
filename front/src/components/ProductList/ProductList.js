@@ -26,12 +26,11 @@ export class ProductList extends Component {
     
   }
   render() {
-    const totalProducts = this.props.productsList.length
 
     const filtredBooks = this.state.currentProducts.filter(book => {
       return book.title.toLowerCase().indexOf(this.state.searchString.toLowerCase()) !== -1 || book.author.toLowerCase().indexOf(this.state.searchString.toLowerCase()) !== -1
     })
-    console.log(this.props)
+
     return (
       <div className="py-5 mt-5">
         <div className="container">
@@ -48,7 +47,7 @@ export class ProductList extends Component {
           <div>
           <div className="d-flex justify-content-center ">
 
-          {this.props.page && this.props.page ? <Pagination pageNeighbours={1} totalRecords ={totalProducts} pageLimit ={6} onPageChanged={this.onPageChanged} /> :null}
+          {this.props.page && this.props.page ? <Pagination pageNeighbours={1} totalRecords ={this.props.total_records} pageLimit ={6} onPageChanged={this.onPageChanged} />: null}   
 
           </div>
            

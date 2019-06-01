@@ -13,6 +13,7 @@ const initialState = {
 }
 
 const productsReducer = (state = initialState, action) => {
+
     switch (action.type) {
         case actionTypes.FETCH_PRODUCTS_BEGINN:
             return {
@@ -38,6 +39,29 @@ const productsReducer = (state = initialState, action) => {
             total_records: action.metaData.total_records
 
         }
+        case actionTypes.ADD_BOOK_TO_CART_BEGINN:
+            return{
+                ...state,
+                error:null,
+                loading:true
+            }
+            case actionTypes.ADD_BOOK_TO_CART_FAIL:
+            return{
+                ...state,
+                error: action.error, 
+                loading:false
+            }
+            case actionTypes.ADD_BOOK_TO_CART_SUCCESS:
+            return{
+                ...state,
+                loading:false,
+                cart: state.cart.concat(action.addedBooks)
+            }
+            case actionTypes.CLEAR_CART:
+                return{
+                    ...state,
+                    cart:[]
+                }
         default:
             return state
     }
