@@ -31,7 +31,7 @@ export const fetchMetaDataSuccess = (metaData) =>{
 export const fetchProducts = () =>{
     return dispatch =>{
         dispatch(fetchProductsStart())
-        axios.get(API_BOOKS_URL).then(response =>{
+        axios.get(API_BOOKS_URL, { mode: 'no-cors' }).then(response =>{
             console.log(response)
             dispatch(fetchProductsSuccess(response.data.data))
             dispatch(fetchMetaDataSuccess(response.data.metadata))
