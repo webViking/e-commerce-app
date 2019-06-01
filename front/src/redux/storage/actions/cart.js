@@ -13,8 +13,15 @@ export const addToCartFail = (error) => {
     }
 }
 export const addToCartSuccess = (addedBooks) => {
+    console.log(addedBooks)
     return {
         type: actionTypes.ADD_BOOK_TO_CART_SUCCESS,
         addedBooks
+    }
+}
+
+export const clearCart = ()=>{
+    return{
+        type: actionTypes.CLEAR_CART
     }
 }
