@@ -1,2 +1,2 @@
 export {fetchProducts} from './products'
-export {addToCartSuccess,clearCart} from './cart'
+export {addToCartSuccess,clearCart, removeElFromCart} from './cart'

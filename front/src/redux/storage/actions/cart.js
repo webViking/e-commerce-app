@@ -25,3 +25,9 @@ export const clearCart = ()=>{
         type: actionTypes.CLEAR_CART
     }
 }
+export const removeElFromCart = (elId)=>{
+    return{
+        type:actionTypes.REMOVE_EL_FROM_CART,
+        elId
+    }
+}
