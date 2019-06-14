@@ -7,7 +7,7 @@ import Backdrop from '../components/UI/Backdrop/Backdrop'
 import ProductList from '../components/ProductList/ProductList'
 import Cart from '../components/Cart/Cart'
 import PageNotFound from '../components/UI/PageNotFound/PageNotFound'
-import Summary from '../components/Summary/Summary'
+import SummaryForm from '../components/Summary/SummaryForm'
 class App extends Component {
   state = {
     sideDrawerOpen: false
@@ -39,7 +39,7 @@ class App extends Component {
         <Switch>
           <Route path ="/" exact component = {ProductList}/>
           <Route path ="/cart"  component = {Cart}/>
-          <Route path = "/summary" component = {Summary}/>
+          <Route path = "/summary" component = {SummaryForm}/>
           <Route component = {PageNotFound}/>
         </Switch>
         </div>

@@ -5,6 +5,7 @@
     "author": "M. Karpiński, M. Dobrowolska, M. Braun, J. Lech",
     "cover_url": "/static/cover/book/457.jpg",
     "pages": 280,
+    "quantity": 1,
     "price": 32.00,
     "currency": "PLN"
   },
@@ -15,6 +16,7 @@
     "cover_url": "/static/cover/book/458.jpg",
     "pages": 300,
     "price": 33.00,
+    "quantity": 1,
     "currency": "PLN"
   },
   {
@@ -23,11 +25,13 @@
     "author": "M. Dobrowolska, M. Jucewicz, M. Karpiński, P. Zarzycki",
     "cover_url": "/static/cover/book/905.jpg",
     "pages": 256,
+    "quantity": 1,
     "price": 29.90,
     "currency": "PLN"
   },
   {
     "id": 1227,
+    "quantity": 1,
     "title": "Język polski 6. Między nami. Podręcznik",
     "author": "A. Łuczak, A. Murdzek",
     "cover_url": "/static/cover/book/1227.jpg",
@@ -37,6 +41,7 @@
   },
   {
     "id": 1228,
+    "quantity": 1,
     "title": "Nowa Matematyka z plusem 6. Podręcznik",
     "author": "M. Dobrowolska, M. Jucewicz, M. Karpiński, P. Zarzycki",
     "cover_url": "/static/cover/book/1228.jpg",
@@ -46,6 +51,7 @@
   },
   {
     "id": 1246,
+    "quantity": 1,
     "title": "Matematyka z plusem 7. Podręcznik",
     "author": "praca zbiorowa pod redakcją M. Dobrowolskiej",
     "cover_url": "/static/cover/book/1246.jpg",
@@ -55,6 +61,7 @@
   },
   {
     "id": 1250,
+    "quantity": 1,
     "title": "Matematyka z plusem 4. Podręcznik",
     "author": "M. Dobrowolska, M. Jucewicz, M. Karpiński, P. Zarzycki",
     "cover_url": "/static/cover/book/1250.jpg",
@@ -68,6 +75,7 @@
     "author": "A. Łuczak, A. Murdzek, K. Krzemieniewska-Kleban",
     "cover_url": "/static/cover/book/1269.jpg",
     "pages": 352,
+    "quantity": 1,
     "price": 32.30,
     "currency": "PLN"
   },
@@ -77,6 +85,7 @@
     "author": "A. Łuczak, E. Prylińska, A. Suchowierska, R. Maszka",
     "cover_url": "/static/cover/book/1270.jpg",
     "pages": 376,
+    "quantity": 1,
     "price": 34.30,
     "currency": "PLN"
   },
@@ -86,6 +95,7 @@
     "cover_url": "/static/cover/book/1271.jpg",
     "author": "T. Małkowski",
     "pages": 160,
+    "quantity": 1,
     "price": 30.50,
     "currency": "PLN"
   },
@@ -96,6 +106,7 @@
     "author": "T. Małkowski",
     "pages": 256,
     "price": 34.10,
+    "quantity": 1,
     "currency": "PLN"
   },
   {
@@ -105,6 +116,7 @@
     "cover_url": "/static/cover/book/1365.jpg",
     "pages": 272,
     "price": 31.90,
+    "quantity": 1,
     "currency": "PLN"
   },
   {
@@ -114,6 +126,7 @@
     "cover_url": "/static/cover/book/1374.jpg",
     "pages": 288,
     "price": 34.20,
+    "quantity": 1,
     "currency": "PLN"
   },
   {
@@ -123,6 +136,7 @@
     "cover_url": "/static/cover/book/1403.jpg",
     "pages": 390,
     "price": 32.30,
+    "quantity": 1,
     "currency": "PLN"
   },
   {
@@ -132,6 +146,7 @@
     "cover_url": "/static/cover/book/1409.jpg",
     "pages": 387,
     "price": 34.30,
+    "quantity": 1,
     "currency": "PLN"
   },
   {
@@ -141,7 +156,8 @@
     "author": "T. Małkowski",
     "pages": 224,
     "price": 30.50,
-    "currency": "PLN"
+    "currency": "PLN",
+    "quantity": 1
   },
   {
     "id": 1417,
@@ -150,6 +166,7 @@
     "author": "T. Małkowski",
     "pages": 264,
     "price": 34.10,
-    "currency": "PLN"
+    "currency": "PLN",
+    "quantity": 1
   }
 ]
