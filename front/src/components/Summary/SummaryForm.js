@@ -150,7 +150,7 @@ const SummaryForm = (props) => {
                 disabled={!props.dirty && !props.isSubmitting}
                 className="btn btn-primary mt-3"
               >
-                Submit
+                Zamawiam
             </button>
               <button
                 disabled={!props.dirty}
