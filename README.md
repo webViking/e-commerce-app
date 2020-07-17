@@ -1,68 +1,46 @@
-# Zadanie 
-Zadanie  polega na napisaniu programu, który ma przedstawiać proces
- zakupowy książek (pobieranie danych o książkach z API, dodawanie i usuwanie
- produktów z koszyka, wypełnienie formularza danymi osobowymi potrzebnymi do
- realizacji zamówienia).
+# Sample E-Commerce Application
+Simple E-Commerce App written in React, which shows process of buying a book(fetching data from API, adding/removing products from shop cart, fulfilling form and passing a validation to continue the process).
 
 
-#### 1. Strona główna
-###### Lista funkcjonalności składająca się dla ww. strony:
-* pobieranie danych z API po wejściu na stronę aplikacji (**GET** _/book_),
-* wyświetlenie wcześniej pobranych danych w konkretnym formacie, tj. każdą
- książkę powinien przedstawiać jeden blok, który ma w sobie zawierać okładkę
- książki, jej tytuł, autora, liczbę stron oraz dwa przyciski:
-    * `DODAJ DO KOSZYKA`, który będzie dodawał konkretną pozycję do koszyka,
-    * `ZAMÓW`, który będzie kierował do etapu podsumowania zamówienia.
-###### Funkcjonalności dodatkowe:
-- wyszukiwarka (po tytule lub autorze książki),
-- paginacja (potrzebne dane będą zwracane z API, sposób realizacji dowolny).
-#### 2. Strona prezentująca koszyk
-###### Lista funkcjonalności składająca się na minimum dla ww. strony:
-* wyświetlanie listy wybranych przez użytkownika książek,
-* przycisk `DALEJ`, który będzie kierował do etapu podsumowania zamówienia.
-###### Lista funkcjonalności składająca się dla ww. strony:
-* formularza z polami:
-    * imię,
-    * nazwisko,
-    * numer kontaktowy,
-    * email,
-    * ulica i numer budynku,
-    * miejscowość,
-    * kod pocztowy,
-* przycisk `ZAMAWIAM` po naciśnięciu którego zostaną wysłane dane pod
- endpoint **POST** _/order_.
-###### Funkcjonalności dodatkowa:
-* walidacja formularza.
+## Prerequisites
+* NodeJs 10.x + 
+* Yarn 1.22.x + 
+## Backend technologies
+* NodeJS
+* ExpressJS
+* Swagger
 
-### Spis technologii przy pracy 
-* react,
-* redux,
-* react-router,
-* formik
-* yup
-* redux-thunk
-* axios
-* styled-components
-* bootstrap
+## Frontend technologies
+* React,
+* Redux,
+* React-router,
+* Formik
+* Yup
+* Redux-Thunk
+* Axios
+* Styled-components
+* Bootstrap
 
 
-## Dokumentacja API
-Dokumentacja w formacie OpenAPI 3 dostępna jest po uruchomieniu mock serwera
- i przejściu na adres: [localhost:3001/docs](http://localhost:3001/docs).
+## API Documentation
+Documentation is available after running mock server.Then open it your browser.  
+ [localhost:3001/docs](http://localhost:3001/docs).
 
-## Uruchamianie środowiska deweloperskiego
-Wymagane jest posiadanie Node.js wraz z Yarn. Projekt wymaga instalacji i
- uruchomienia API mock serwera:
+## Running Development Environment
+Required  to have Node.js and Yarn. 
+Project require installation and activation of API mock server.
+Running backend with following bash commands:
+
 ```bash
 cd api
-cp .env.dist .env # Plik może wymagać modyfikacji
 yarn install
 yarn start
 ```
-oraz uruchomienia właściwego projektu - frontend:
+
+Running frontend default on port 3000 - [localhost:3000](http://localhost:3000)
+
 ```bash
 cd front
-cp .env.dist .env # Plik może wymagać modyfikacji
 yarn install
 yarn start
 ```
